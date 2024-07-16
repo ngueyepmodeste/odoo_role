@@ -17,7 +17,7 @@ services:
 
   {{NOM_SERVICE_DB}}:
     image: {{image_db}}
-    container_name: {{nom_conteneur_db}}
+    container_name: {{VARS_HOST}}
     environment:
       - POSTGRES_DB={{VARS_POSTGRES}}
       - POSTGRES_PASSWORD={{VARS_PASSWORD}}
