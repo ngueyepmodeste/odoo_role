@@ -1,8 +1,8 @@
 version: '{{odoo_version}}'
 services:
- {{NOM_SERVICE_WEB}}:
+  {{NOM_SERVICE_WEB}}:
     image: {{odoo_image}}
-    container_name: {{ nom_conteneur_web}}
+    container_name: {{nom_conteneur_web}}
     depends_on:
       - {{NOM_SERVICE_DB}}
     ports:
@@ -29,3 +29,4 @@ services:
 volumes:
   {{vars_db_volumes}}:
   {{vars_odoo_volumes}}:
+
